@@ -231,7 +231,7 @@ html, body{
 @media (max-width: 768px) {
   .top-bar {
     padding: 15px;
-    display: flex;
+    display: block;
   }
 
   .top-bar .logo {
@@ -262,3 +262,4 @@ html, body{
   }
 
 }
+
