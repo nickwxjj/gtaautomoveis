@@ -176,7 +176,7 @@ html, body{
 .top-bar .logo {
   height: 40px;
   float: left;
-  padding: 0px 10px 0px 0px;
+  padding: 0px 4px 0px 0px;
 }
 
 .menu-bar {
@@ -262,4 +262,5 @@ html, body{
   }
 
 }
+
 
