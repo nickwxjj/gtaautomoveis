@@ -42,7 +42,7 @@ html, body{
   width: auto;
   position: relative;
   float: left;
-  padding-right: 0px;
+  padding-right: 4px;
 }
 
 .menu-bar {
@@ -559,5 +559,6 @@ html, body{
     height: 220px;
   }
 }
+
 
 
