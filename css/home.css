@@ -42,7 +42,7 @@ html, body{
   width: auto;
   position: relative;
   float: left;
-  padding-right: 10px;
+  padding-right: 0px;
 }
 
 .menu-bar {
@@ -113,9 +113,6 @@ html, body{
 
 }
 
-  .principal-text {
-    text-align: left;
-  }
 
 .redes {
   width: fit-content;
@@ -505,15 +502,26 @@ html, body{
   }
 
   .conteiner-1 {
-    padding: 15px;
-    height: 500x;
+    padding: 10px;
+    height: 800px;
     width: auto;
-    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+  
   }
    
 
-.texts {
-  top: -100px;
+.title {
+  top: 200px;
+  position: relative;
+  display: flex;
+}
+.description,
+.verse-address {
+  top: 200px;
+  position: relative;
+  display: flex;
 }
 
   .principal-text {
@@ -524,10 +532,14 @@ html, body{
     flex-wrap: wrap;
     gap: 10px;
     padding: 15px;
+    position: relative;
+  display: flex;
+  top: 200px;
   }
 
   .container-2 {
     height: auto;
+    padding: 10px;
   }
 
   .container_content {
@@ -547,7 +559,5 @@ html, body{
     height: 220px;
   }
 }
-
-
 
 
