@@ -490,6 +490,7 @@ html, body{
   .top-bar .logo {
     height:25px;   /* deixa a logo menor */
     width: auto;
+    padding-left: 4px;
   }
 
   .menu-bar {
@@ -559,6 +560,7 @@ html, body{
     height: 220px;
   }
 }
+
 
 
 
