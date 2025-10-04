@@ -483,13 +483,14 @@ html, body{
 
 @media (max-width: 768px) {
   .top-bar {
-    padding: 10px;
-    display: block;
+    padding: 15px;
+    display: flex;
   }
 
   .top-bar .logo {
     height:25px;   /* deixa a logo menor */
     width: auto;
+    padding-left: 0px;
   }
 
   .menu-bar {
@@ -560,6 +561,7 @@ html, body{
     height: 220px;
   }
 }
+
 
 
 
