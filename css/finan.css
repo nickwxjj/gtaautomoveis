@@ -230,7 +230,7 @@ html, body{
 
 @media (max-width: 768px) {
   .top-bar {
-    padding: 10px;
+    padding: 20px;
     display: flex;
   }
 
@@ -269,5 +269,6 @@ html, body{
     height: auto;
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
   }
+
 
 }
