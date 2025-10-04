@@ -230,13 +230,14 @@ html, body{
 
 @media (max-width: 768px) {
   .top-bar {
-    padding: 15px;
+    padding: 10px;
     display: block;
   }
 
   .top-bar .logo {
     height:25px;   /* deixa a logo menor */
     width: auto;
+    padding: none;
   }
 
   .menu-bar {
@@ -261,6 +262,7 @@ html, body{
   }
 
 }
+
 
 
 
