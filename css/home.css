@@ -482,7 +482,7 @@ html, body{
 }
 
 @media (max-width: 768px) {
-   .top-bar {
+  .top-bar {
     padding: 20px;
     display: flex;
   }
@@ -500,6 +500,12 @@ html, body{
   .menu-bar li a {
     font-size: 12px;  /* fonte menor */
     padding: 4px; /* menos espaçamento */
+  }
+
+    html, body {
+    background-image: center;
+    background-size: cover;
+    justify-content: center;
   }
 
   .conteiner-1 {
@@ -561,6 +567,7 @@ html, body{
     height: 220px;
   }
 }
+
 
 
 
