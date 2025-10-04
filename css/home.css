@@ -42,7 +42,7 @@ html, body{
   width: auto;
   position: relative;
   float: left;
-  padding-right: 4px;
+  padding-right: 0px;
 }
 
 .menu-bar {
@@ -483,14 +483,13 @@ html, body{
 
 @media (max-width: 768px) {
   .top-bar {
-    padding: 15px;
+    padding: 10px;
     display: block;
   }
 
   .top-bar .logo {
     height:25px;   /* deixa a logo menor */
     width: auto;
-    padding-left: 4px;
   }
 
   .menu-bar {
@@ -531,11 +530,12 @@ html, body{
 
   .redes {
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 15px;
+    gap: 35px;
+    padding: 25px;
     position: relative;
-  display: flex;
-  top: 200px;
+    display: flex;
+    top: 200px;
+    width: 100%;
   }
 
   .container-2 {
@@ -560,7 +560,6 @@ html, body{
     height: 220px;
   }
 }
-
 
 
 
