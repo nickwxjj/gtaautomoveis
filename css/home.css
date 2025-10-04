@@ -483,7 +483,7 @@ html, body{
 
 @media (max-width: 768px) {
    .top-bar {
-    padding: 10px;
+    padding: 20px;
     display: flex;
   }
 
@@ -561,5 +561,6 @@ html, body{
     height: 220px;
   }
 }
+
 
 
