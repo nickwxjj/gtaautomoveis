@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="wensite icon" type="png" href="img/topbar - Copia.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/sobre.css">
+</head>
+  <body>
+  <div class="loader-wrapper">
+    <div class="spinner"></div>
+  </div>
+
+  <header class="top-bar">
+    <img src="img/topbar.png" class="logo">
+    <ul class="menu-bar">
+      <li class="links1"><a href="home.php">Home</a></li>
+      <li class="links"><a href="estoque.php">Estoque</a></li>
+      <li class="links"><a href="financiamento.php">Financiamento</a></li>
+      <li class="links"><a href="sobre.html">Sobre</a></li>
+    </ul>
+  </header>
+  <main>
+    <section class="sobre">
+      <div class="container-sobre">
+        <h1 class="principal-title">Sobre Nós</h1>
+        <p>A GTA Automóveis é uma nova agência de carros que chega ao mercado com o propósito de oferecer veículos de alta qualidade e um atendimento excepcional. Apesar de ser uma loja recente, nossa equipe é formada por profissionais com mais de 5 anos de experiência no setor automotivo, apaixonados por carros e comprometidos em proporcionar uma experiência de compra confiável, transparente e satisfatória.</p>
+        <p>Nossa missão é ajudar você a encontrar o veículo ideal, que atenda às suas necessidades e preferências, sempre com integridade e dedicação. Acreditamos que comprar um carro deve ser um momento emocionante e livre de estresse — por isso, acompanhamos você em cada etapa do processo, desde a escolha do modelo até o financiamento e a entrega.</p>
+        <p>Na GTA Veículos, trabalhamos todos os dias para conquistar a sua confiança e realizar o seu sonho de ter o carro perfeito. Agradecemos por escolher a GTA como sua parceira nessa jornada.</p>
+        
+      </div>
+    </section>
+
+    <script>
+        window.addEventListener("load", function() {
+          const loader = document.querySelector(".loader-wrapper");
+          setTimeout(function() {
+            loader.classList.add("hide");
+            loader.addEventListener("transitionend", function() {
+                if (loader.parentNode) {
+                    loader.parentNode.removeChild(loader);
+                }
+            });
+          }, 2000);
+        });
+    </script>
+  </body>
+</html>

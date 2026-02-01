@@ -1,0 +1,444 @@
+@charset "utf-8";
+
+/* Loader Spinner Styles */
+.spinner {
+  --size: 30px;
+  --first: #005bba;
+  --second: #fed500;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: spin 3s linear infinite;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  width: var(--size);
+  height: var(--size);
+  border: 4px solid var(--first);
+  border-top: 4px solid var(--second);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spinRing 1.5s ease-out infinite;
+  box-shadow: 0 0 10px var(--first);
+}
+
+.spinner::before {
+  filter: blur(10px);
+}
+
+@keyframes spinRing {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Container que cobre a tela inteira */
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Classe para esconder o loader */
+.loader-wrapper.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../img/fundo_finan.jpg');     
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;                                      
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-repeat: no-repeat;
+    max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  justify-content: center;
+  position: relative; 
+  align-items: center;
+  display: flex;
+  height: 770px;
+  padding: 10px;
+  position: relative;
+}
+
+/* From Uiverse.io by VIJAYAACHI */ 
+.form-container {
+  height: auto;
+  width: auto;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgb(255, 255, 255);
+  display: block;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.form {
+  margin-top: 1.5rem;
+}
+
+.input-group {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.input-group label {
+  display: block;
+  color: rgba(156, 163, 175, 1);
+  margin-bottom: 4px;
+}
+
+.input-group input {
+  width: 95%;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  outline: 0;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 0.75rem 1rem;
+  color: rgba(243, 244, 246, 1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.forgot {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(156, 163, 175, 1);
+  margin: 8px 0 0px 0;
+}
+
+.forgot a,
+.signup a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot a:hover,
+.signup a:hover {
+  text-decoration: underline rgb(0, 0, 0);
+}
+
+.sign {
+  display: block;
+  width: 100%;
+  background-color:#0052b6;
+  padding: 0.75rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+}
+
+.social-message {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.line {
+  height: 1px;
+  flex: 1 1 0%;
+  background-color: rgb(0, 0, 0);
+}
+
+.social-message .message {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(156, 163, 175, 1);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons .icon {
+  border-radius: 0.125rem;
+  padding: 0.75rem;
+  border: none;
+  background-color: transparent;
+  margin-left: 8px;
+}
+
+.social-icons .icon svg {
+  height: 1.25rem;
+  width: 1.25rem;
+  fill: #fff;
+}
+
+.signup {
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(156, 163, 175, 1);
+}
+
+
+.top-bar {
+    display: block;                   
+    color: white;
+    width: 100%;                 
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
+    gap: 12px;
+    z-index: 1000;
+}
+
+.top-bar .logo {
+  height: 40px;
+  float: left;
+  padding: 0px 0px 0px 0px;
+}
+
+.menu-bar {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.menu-bar li {
+  float: none;
+}
+.menu-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+.menu-bar li a:hover {
+  text-shadow: 0px 0px 5px #ffffff;
+}
+
+.menu-bar {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* sempre centralizado */
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+}
+
+.menu-bar li {
+  float: none;
+}
+.menu-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+.menu-bar li a:hover {
+  text-shadow: 0px 0px 5px #ffffff;
+}
+
+.menu-bar ul {
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
+/* Responsive fixes to prevent horizontal overflow on small screens */
+@media (max-width: 767.98px) {
+  /* Disable fixed background on small devices (can cause painting/overflow) */
+  section.py-5 {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  /* Make all card images scale to their column width */
+  .card-img-top,
+  .card img,
+  img.card-img-top {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: cover; /* preserve aspect while filling the card */
+  }
+
+  /* Reduce large paddings that can create horizontal scroll */
+  header.bg-dark {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Reduce container side padding on very small screens */
+  .container,
+  .container-fluid,
+  header.bg-dark {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  /* Prevent long unbroken content from forcing extra width */
+  .row,
+  .gx-4,
+  .gx-lg-5 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Ensure text wraps instead of forcing horizontal scroll */
+  body, .text-center, p, h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Stronger mobile fixes to eliminate any remaining horizontal overflow */
+  html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important; /* safe fallback to hide any tiny overflow */
+  }
+
+  /* Ensure fixed header/topbar fits the viewport */
+  .top-bar {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important; 
+    box-sizing: border-box !important;
+  }
+
+  /* Make the menu wrap instead of forcing width */
+  .menu-bar {
+    float: none !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+  }
+
+  .menu-bar li {
+    display: inline-block !important;
+  }
+
+  /* Rows and gutters: ensure they don't exceed container width */
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .gx-4 > *,
+  .gx-lg-5 > * {
+    padding-left: .5rem !important;
+    padding-right: .5rem !important;
+  }
+
+  /* Ensure any absolutely-positioned badges don't force overflow */
+  .position-absolute {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (max-width: 768px) {
+   .top-bar {
+    padding: 20px;
+    display: flex;
+  }
+
+  .top-bar .logo {
+    height:25px;   /* deixa a logo menor */
+    width: auto;
+    padding-left: 0px;
+  }
+
+  .menu-bar {
+    gap: 8px;       /* diminui o espaço entre links */
+  }
+
+  .menu-bar li a {
+    font-size: 12px;  /* fonte menor */
+    padding: 4px; /* menos espaçamento */
+  }
+}
+
+  .container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+
+  }
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.01);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  height: auto;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
+}
